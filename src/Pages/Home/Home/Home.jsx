@@ -8,6 +8,7 @@ import FindClasses from '../FindClasses/FindClasses';
 import FindCourses from '../FindCourses/FindCourses';
 import Category from '../Categorys/Category';
 import PopularClasses from '../PopularClasses/PopularClasses';
+import ExpertTeachers from '../ExpertTeachers/ExpertTeachers';
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
             <FindCourses></FindCourses>
             <Category></Category>
             <PopularClasses></PopularClasses>
+            < ExpertTeachers></ ExpertTeachers>
         </div>
     );
 };

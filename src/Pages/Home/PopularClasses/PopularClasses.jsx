@@ -14,7 +14,8 @@ const PopularClasses = () => {
             setPcd(data);
         })
     }, [])
-    const pc = pcd[0].content; 
+    const pc = pcd.length > 0 ? pcd[0].content : [];
+
     console.log(pc);
 
     return (
