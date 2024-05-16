@@ -6,5 +6,8 @@
 - npm i react-helmet-async
 - npm install firebase
 - npm install axios
+- npm install swiper
+
+
 
 

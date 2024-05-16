@@ -6,6 +6,7 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home/Home";
 import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
+import CategoryCardDetails from "../Pages/Home/Categorys/CategoryCardDetails";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+          path: '/category/:id',
+          element: <CategoryCardDetails></CategoryCardDetails>,
+          loader: ()=> fetch('http://localhost:5000/category')
         },
         {
             path: '/login',

@@ -1,0 +1,478 @@
+[
+    
+    {   
+        "serial": 1,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/icon/07.svg",
+        "heading1": "Languages",
+        "content": [
+            {
+                "sl": 1,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/04.jpg",
+                "heading1": "Little Adventurers Travel the World Together! (Ages 7-9)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (124)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$15.00"
+            },
+            {
+                "sl": 2,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/05.jpg",
+                "heading1": "Weekly English Language Arts Club (Age 9-13)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (90)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$10.00"
+            },
+            {
+                "sl": 3,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/06.jpg",
+                "heading1": "Dragon, Monster & Magical Creature Drawing Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (88)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$16.00"
+            },
+            {
+                "sl": 4,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/07.jpg",
+                "heading1": "Bloxburg 1 on 1 Class Learn to Build or Improve",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 5,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/08.jpg",
+                "heading1": "Girls Just Want to Have Fun Art and Ongoing Social Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 6,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/09.jpg",
+                "heading1": "Private Math Tutoring Grades 3rd- 7th (One Time Class)",
+                "ages" : "Ages 4-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 7,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/10.jpg",
+                "heading1": "A Full One on One Roblox Game Making Experience",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 8,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/11.jpg",
+                "heading1": "Learn To Read With Teacher Tracy - Individual Beginner",
+                "ages" : "Ages 7-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            }
+        ]
+    },
+    {
+        "serial": 2,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/icon/08.svg",
+        "heading1": "Coding",
+        "content": [
+            {
+                "sl": 1,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/04.jpg",
+                "heading1": "Little Adventurers Travel the World Together! (Ages 7-9)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (124)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$15.00"
+            },
+            {
+                "sl": 2,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/05.jpg",
+                "heading1": "Weekly English Language Arts Club (Age 9-13)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (90)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$10.00"
+            },
+            {
+                "sl": 3,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/06.jpg",
+                "heading1": "Dragon, Monster & Magical Creature Drawing Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (88)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$16.00"
+            },
+            {
+                "sl": 4,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/07.jpg",
+                "heading1": "Bloxburg 1 on 1 Class Learn to Build or Improve",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 5,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/08.jpg",
+                "heading1": "Girls Just Want to Have Fun Art and Ongoing Social Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 6,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/09.jpg",
+                "heading1": "Private Math Tutoring Grades 3rd- 7th (One Time Class)",
+                "ages" : "Ages 4-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 7,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/10.jpg",
+                "heading1": "A Full One on One Roblox Game Making Experience",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 8,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/11.jpg",
+                "heading1": "Learn To Read With Teacher Tracy - Individual Beginner",
+                "ages" : "Ages 7-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            }
+        ]
+    },
+    {
+        "serial": 3,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/icon/09.svg",
+        "heading1": "Math",
+        "content": [
+            {
+                "sl": 1,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/04.jpg",
+                "heading1": "Little Adventurers Travel the World Together! (Ages 7-9)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (124)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$15.00"
+            },
+            {
+                "sl": 2,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/05.jpg",
+                "heading1": "Weekly English Language Arts Club (Age 9-13)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (90)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$10.00"
+            },
+            {
+                "sl": 3,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/06.jpg",
+                "heading1": "Dragon, Monster & Magical Creature Drawing Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (88)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$16.00"
+            },
+            {
+                "sl": 4,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/07.jpg",
+                "heading1": "Bloxburg 1 on 1 Class Learn to Build or Improve",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 5,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/08.jpg",
+                "heading1": "Girls Just Want to Have Fun Art and Ongoing Social Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 6,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/09.jpg",
+                "heading1": "Private Math Tutoring Grades 3rd- 7th (One Time Class)",
+                "ages" : "Ages 4-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 7,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/10.jpg",
+                "heading1": "A Full One on One Roblox Game Making Experience",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 8,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/11.jpg",
+                "heading1": "Learn To Read With Teacher Tracy - Individual Beginner",
+                "ages" : "Ages 7-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            }
+        ]
+    },
+    {
+        "serial": 4,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/icon/10.svg",
+        "heading1": "Music",
+        "content": [
+            {
+                "sl": 1,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/04.jpg",
+                "heading1": "Little Adventurers Travel the World Together! (Ages 7-9)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (124)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$15.00"
+            },
+            {
+                "sl": 2,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/05.jpg",
+                "heading1": "Weekly English Language Arts Club (Age 9-13)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (90)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$10.00"
+            },
+            {
+                "sl": 3,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/06.jpg",
+                "heading1": "Dragon, Monster & Magical Creature Drawing Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (88)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$16.00"
+            },
+            {
+                "sl": 4,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/07.jpg",
+                "heading1": "Bloxburg 1 on 1 Class Learn to Build or Improve",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 5,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/08.jpg",
+                "heading1": "Girls Just Want to Have Fun Art and Ongoing Social Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 6,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/09.jpg",
+                "heading1": "Private Math Tutoring Grades 3rd- 7th (One Time Class)",
+                "ages" : "Ages 4-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 7,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/10.jpg",
+                "heading1": "A Full One on One Roblox Game Making Experience",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 8,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/11.jpg",
+                "heading1": "Learn To Read With Teacher Tracy - Individual Beginner",
+                "ages" : "Ages 7-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            }
+        ]
+    },
+    {
+        "serial": 5,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/icon/11.svg",
+        "heading1": "Writing",
+        "content": [
+            {
+                "sl": 1,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/04.jpg",
+                "heading1": "Little Adventurers Travel the World Together! (Ages 7-9)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (124)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$15.00"
+            },
+            {
+                "sl": 2,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/05.jpg",
+                "heading1": "Weekly English Language Arts Club (Age 9-13)",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (90)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$10.00"
+            },
+            {
+                "sl": 3,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/06.jpg",
+                "heading1": "Dragon, Monster & Magical Creature Drawing Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (88)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$16.00"
+            },
+            {
+                "sl": 4,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/07.jpg",
+                "heading1": "Bloxburg 1 on 1 Class Learn to Build or Improve",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 5,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/08.jpg",
+                "heading1": "Girls Just Want to Have Fun Art and Ongoing Social Club",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Maria Sofa",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-01.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 6,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/09.jpg",
+                "heading1": "Private Math Tutoring Grades 3rd- 7th (One Time Class)",
+                "ages" : "Ages 4-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Arya Stark",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-02.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 7,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/10.jpg",
+                "heading1": "A Full One on One Roblox Game Making Experience",
+                "ages" : "Ages 3-8",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Rosabell",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-03.png",
+                "price" : "$35.00"
+            },
+            {
+                "sl": 8,
+                "imgLink": "https://html.themewant.com/studykids/assets/images/course/11.jpg",
+                "heading1": "Learn To Read With Teacher Tracy - Individual Beginner",
+                "ages" : "Ages 7-9",
+                "time" : "50 Min",
+                "rating" : "4.5 (44)",
+                "teacher" : "Morgan Jofs",
+                "imgT" : "https://html.themewant.com/studykids/assets/images/course/author-04.png",
+                "price" : "$35.00"
+            }
+        ]
+    }
+]

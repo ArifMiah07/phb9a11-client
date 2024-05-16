@@ -16,7 +16,7 @@ const FindClasses = () => {
             setAboutData(data);
         
         })
-        .catch(error => console.error('Error fetching about-us:', error));
+        .catch(error => console.error('Error fetching:', error));
 
     }, [])
 
