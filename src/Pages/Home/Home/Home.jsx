@@ -7,6 +7,7 @@ import AboutUs from '../About/AboutUs';
 import FindClasses from '../FindClasses/FindClasses';
 import FindCourses from '../FindCourses/FindCourses';
 import Category from '../Categorys/Category';
+import PopularClasses from '../PopularClasses/PopularClasses';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <FindClasses></FindClasses>
             <FindCourses></FindCourses>
             <Category></Category>
+            <PopularClasses></PopularClasses>
         </div>
     );
 };
