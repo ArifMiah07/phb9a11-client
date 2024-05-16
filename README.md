@@ -3,6 +3,7 @@
 - tailwind css
 - daisyUi
 - npm install react-icons --save
+- npm i react-helmet-async
+- npm install firebase
 
-draw this text : 'errorNotFound',  vector art, white background 
-register
+

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import  '../../../Styles/Fonts/GoogleFonts.css'
+import brain_icon from '../../../assets/brain-icon-flat.png'
 import './navbar.css'
 const NavBar = () => {
 
@@ -23,7 +24,7 @@ const NavBar = () => {
             </div>
             <div className="flex items-center">
                {/* <img src="/logo.png" alt="Studykids" className="h-8 mr-2" /> */}
-               <span className="flex gap-0 text-2xl font-bold"> <span className='text-[#09A24F]  '>Smart</span><span className='text-[#7763E5]  '> Kidz</span></span>
+              <div className='flex'><span className='flex'><img className='w-8 h-8' src={brain_icon} alt="" /> <img className='w-2 h-2' src="https://ouch-cdn2.icons8.com/U0_RVUErdJV8HehKVPesHa6AesS-qD5rQI44pClMtH4/rs:fit:249:456/extend:false/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMjA4/L2YzMDNjZTQyLWZl/ODktNDNhZi04ZjY4/LTJjNzUwMTQyNjg1/OC5zdmc.png" alt="" /></span></div> <span className="flex gap-0 text-2xl font-bold"> <span className='text-[#09A24F]  '>Smart</span><span className='text-[#7763E5]  '> Kidz</span></span>
            </div>
         </div>
         <div className="navbar-center hidden lg:flex">
