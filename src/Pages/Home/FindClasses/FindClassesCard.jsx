@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
-import './about.css'
 import '../../../Styles/Fonts/GoogleFonts.css'
 
-const AboutCard = ({data}) => {
+const FindClassesCard = ({data}) => {
     const {serial, imageLink, heading1, paragraph, style, backgroundColor } = data;
     console.log(data, imageLink, heading1, paragraph, style, backgroundColor);
     return (
-        <div className={`aboutBorder flex flex-row gap-4 py-12 text-white ${serial === 1 ? 'bg-[#09A24F]' : serial === 2 ? 'bg-[#7763E5]' : ''} text-[#000] rounded-lg`}>
-            <div className='p-6'>
+        <div className={`aboutBorder flex flex-col gap-4 p-6  text-white ${serial === 1 ? 'bg-[#7763E5]' : serial === 2 ? 'bg-[#FF6D1C]' : serial === 3 ? 'bg-[#B54CCA]' : serial === 4 ? 'bg-[#09A24F]': ''} text-[#000] rounded-lg`}>
+            <div className='w-[100px]   '>
                 <img className='w-full h-full' src={imageLink} alt="" />
             </div>
             <div className='flex flex-col gap-5'>
@@ -18,8 +17,8 @@ const AboutCard = ({data}) => {
     );
 };
 
-AboutCard.propTypes = {
+FindClassesCard.propTypes = {
     data: PropTypes.object
 }
 
-export default AboutCard;
+export default FindClassesCard;

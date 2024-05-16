@@ -24,6 +24,9 @@ const router = createBrowserRouter([
         {
             path: '/register',
             element: <Register></Register>
+        },
+        {
+          path: '/all services:'
         }
       ]
     },
