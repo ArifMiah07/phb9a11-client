@@ -7,6 +7,7 @@
 - npm install firebase
 - npm install axios
 - npm install swiper
+- npm i react-fast-marquee
 
 
 

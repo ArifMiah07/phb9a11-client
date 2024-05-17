@@ -1,0 +1,38 @@
+[
+    {
+      "serial": 1,
+      "imageLink": "https://html.themewant.com/studykids/assets/images/events/01.png",
+      "heading1": "Annual Cultural Programme",
+      "paragraph": "At SmartKidz our mission is to cultivate an environment where curiosity is sparked.",
+      "date": ["29", "January"],
+      "time": "9:00 Am - 12:00 Pm" ,
+      "location": "55 Clark St, Brooklyn, NY 11201, USA"
+    },
+    {
+      "serial": 2,
+      "imageLink": "https://html.themewant.com/studykids/assets/images/events/01.png",
+      "heading1": "A World of Stories Awaits",
+      "paragraph": "At SmartKidz our mission is to cultivate an environment where curiosity is sparked.",
+      "date": ["05", "March"],
+      "time": "9:00 Am - 12:00 Pm" ,
+      "location": "55 Clark St, Brooklyn, NY 11201, USA"
+    },
+    {
+      "serial": 3,
+      "imageLink": "https://html.themewant.com/studykids/assets/images/events/01.png",
+      "heading1": "World Drawing Day",
+      "paragraph": "As we embark on the journey of education together, we remain committed to providing.",
+      "date": ["11", "March"],
+      "time": "9:00 Am - 12:00 Pm" ,
+      "location": "55 Clark St, Brooklyn, NY 11201, USA"
+    },
+    {
+      "serial": 4,
+      "imageLink": "https://html.themewant.com/studykids/assets/images/events/01.png",
+      "heading1": "World Kids Day",
+      "paragraph": "As we embark on the journey of education together, we remain committed to providing.",
+      "date": ["19", "April"],
+      "time": "9:00 Am - 12:00 Pm" ,
+      "location": "55 Clark St, Brooklyn, NY 11201, USA"
+    }
+]

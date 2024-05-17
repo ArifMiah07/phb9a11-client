@@ -31,7 +31,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full top-10 z-50 fixed">
+                <div className="w-full top-1 z-50 fixed">
                     <NavBar></NavBar>
                 </div>
             </div>

@@ -29,8 +29,11 @@ const TeacherCard = ({ name, image, id }) => (
 );
 
 const ExpertTeachers = () => (
-  <div className='border border-red-400 w-full flex flex-col justify-between gap-6 p-6'>
-    <div className='border border-red-400 flex flex-col md:flex md:flex-col lg:flex lg:flex-col'>
+  <div className='relative mt-12 bg-[#FFD9EF] border border-red-400 w-full flex flex-col justify-between gap-6 '>
+    <div className='mb-24'>
+        <img className='absolute top-0' src="https://html.themewant.com/studykids/assets/images/banner/banner-bg-2.png" alt="" />
+    </div>
+    <div className='mb-24 border border-red-400 flex flex-col md:flex md:flex-col lg:flex lg:flex-col'>
       <div className='text-center'>
         <h1 className='font-semibold mt-6 text-[20px] inter flex items-center justify-center'>
           <span>
