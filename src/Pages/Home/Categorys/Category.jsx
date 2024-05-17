@@ -29,7 +29,7 @@ const Category = () => {
                     <h1 className='nunito text-[48px] my-5 font-extrabold  '>Popular class topics</h1>
                     <p className='inter text-[rgb(115_116_119)] mb-6 '>marked by significant growth and exploration as <br />toddlers transition from infancy</p>
                 </div>
-                <div className='flex flex-col lg:flex lg:flex-row gap-6 p-3 '>
+                <div className='border border-red-500 w-full  grid grid-cols-1 items-center justify-center md:grid-cols-3 lg:grid-cols-4 gap-6 '>
                     {
                         aboutData.map((data, idx) => <CategoryCard key={idx} data={data}></CategoryCard>)
                     }

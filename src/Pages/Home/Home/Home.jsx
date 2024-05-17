@@ -10,6 +10,8 @@ import Category from '../Categorys/Category';
 import PopularClasses from '../PopularClasses/PopularClasses';
 import ExpertTeachers from '../ExpertTeachers/ExpertTeachers';
 import Events from '../UpcomingEvents/Events';
+import Testimonials from '../Testimonials/Testimonials';
+import BlogAndNews from '../BlogAndNews/BlogAndNews';
 
 
 const Home = () => {
@@ -24,8 +26,10 @@ const Home = () => {
             <FindCourses></FindCourses>
             <Category></Category>
             <PopularClasses></PopularClasses>
-            < ExpertTeachers></ ExpertTeachers>
+            <ExpertTeachers></ ExpertTeachers>
             <Events></Events>
+            <Testimonials></Testimonials>
+            <BlogAndNews></BlogAndNews>
         </div>
     );
 };
