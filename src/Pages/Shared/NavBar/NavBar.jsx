@@ -2,14 +2,36 @@ import { NavLink } from 'react-router-dom';
 import  '../../../Styles/Fonts/GoogleFonts.css'
 import brain_icon from '../../../assets/brain-icon-flat.png'
 import './navbar.css'
+import { useContext } from 'react';
+import { AuthContext } from '../../../Contexts/AuthProvider';
 const NavBar = () => {
+
+    const {user, logOut} = useContext(AuthContext);
+    const handleLogOut = ()=>{
+        logOut()
+        .then( (result)=>{
+            console.log(result.user);
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+    }
+
+
 
     const navLinks = <>
         <li><NavLink to={'/home'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Home</NavLink> </li>
         <li><NavLink to={'/pages'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Pages</NavLink> </li>
         <li><NavLink to={'/classes'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Classes</NavLink> </li>
         <li><NavLink to={'/blog'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Blogs</NavLink> </li>
+        {user?.email ? 
+        <>
+            {/* <li><NavLink to={'/bookings'}>Bookings</NavLink></li> */}
+            <li><button className="text-black hover:text-yellow-400 hover:text-[21px]" onClick={handleLogOut}>Log Out</button></li>
+        </> :
         <li><NavLink to={'/login'} className="text-black hover:text-yellow-400 hover:text-[21px] ">login</NavLink> </li>
+        }
+        
     </>
   return (
     <div className="navbar  rounded-[85px]  custom-box-shadow bg-[#FFFFFF] flex justify-between items-center px-4 py-2 text-white">

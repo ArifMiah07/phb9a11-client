@@ -9,6 +9,8 @@
 - npm install swiper
 - npm i react-fast-marquee
 - npm install react-slick slick-carousel
+- npm install react-toastify
+
 
 
 
