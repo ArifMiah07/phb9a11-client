@@ -14,9 +14,9 @@ const CategoryCardDetails = () => {
     const data = categoryData.find(d => d._id === id);
 
     const {content} = data;
-    console.log( content);
+    // console.log( content);
 
-    console.log('asmalt heke ifd:',id, categoryData);
+    // console.log('asmalt heke ifd:',id, categoryData);
     return (
         <div>
             <div className="hidden md:block lg:block">

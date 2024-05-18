@@ -12,7 +12,7 @@ const FindClasses = () => {
         fetch('http://localhost:5000/about-classes')
         .then(res => res.json())
         .then(data => {
-            console.log(data); 
+            // console.log(data); 
             setAboutData(data);
         
         })

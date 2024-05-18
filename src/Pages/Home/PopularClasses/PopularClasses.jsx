@@ -10,13 +10,13 @@ const PopularClasses = () => {
         fetch('http://localhost:5000/category')
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             setPcd(data);
         })
     }, [])
     const pc = pcd.length > 0 ? pcd[0].content : [];
 
-    console.log(pc);
+    // console.log(pc);
 
     return (
         <div className=' border border-red-400 w-full flex flex-col justify-between gap-6 p-6'>

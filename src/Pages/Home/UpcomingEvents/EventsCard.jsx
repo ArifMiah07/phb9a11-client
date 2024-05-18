@@ -5,7 +5,7 @@ import '../../../Styles/Fonts/GoogleFonts.css'
 
 const AboutCard = ({data}) => {
     const {serial, imageLink, heading1, paragraph, date,time, location} = data;
-    console.log(data, imageLink, heading1, paragraph, date, location);
+    // console.log(data, imageLink, heading1, paragraph, date, location);
     return (
         <div className={` p-8 aboutBorder flex flex-row gap-4 text-white ${serial === 1 ? 'bg-[#09A24F]' : serial === 2 ? 'bg-[#7763E5]' : serial === 3 ? 'bg-[#FF6D1C]' : serial === 4 ? 'bg-[#B54CCA]' : ''} text-[#000] rounded-lg`}>
             <div className='flex items-center'>

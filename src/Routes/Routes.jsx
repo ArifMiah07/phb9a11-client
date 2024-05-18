@@ -8,6 +8,8 @@ import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
 import CategoryCardDetails from "../Pages/Home/Categorys/CategoryCardDetails";
 import PopularClasses from "../Pages/Home/PopularClasses/PopularClasses";
+import AddService from "../Pages/AddService/AddService";
+import About from "../Pages/Home/About/About";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+          path: '/about',
+          element: <About></About>
         },
         {
           path: '/category/:id',
@@ -38,7 +44,8 @@ const router = createBrowserRouter([
             element: <Register></Register>
         },
         {
-          path: '/all services:'
+          path: '/add-services',
+          element: <AddService></AddService>
         }
       ]
     },

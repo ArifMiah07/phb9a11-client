@@ -1,14 +1,23 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../assets/images/auth/login.jpg';
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import useAuth from '../../Hooks/useAuth';
 import NavBar from '../Shared/NavBar/NavBar';
 
-const LogIn = () => {
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
+
+const LogIn = () => {   
+
+    const [showPassword, setShowPassword] = useState(false);
+
     const { signIn, signInWithGoogle } = useAuth();
     const location = useLocation();
     const navigate = useNavigate();
+
+    // const notify = () => toast.success('login success!');
 
     const handleLogin = async (event) => {
         event.preventDefault();
@@ -18,17 +27,21 @@ const LogIn = () => {
 
         try {
             await signIn(email, password);
+            toast.success('login success!');
             navigate(location.state?.from || '/');
         } catch (error) {
-            console.error(error);
+            // console.error(error);
+            toast.error(error);
         }
     };
 
     return (
         <div className=" ">
+        <ToastContainer />
             <div>
                 <NavBar></NavBar>
             </div>
+            {/* <button onClick={notify}>Notify!</button> */}
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center lg:text-left lg:w-1/2">
                     <img src={login} alt="" />
@@ -46,7 +59,10 @@ const LogIn = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+                            <input name="password" type={showPassword ? "text" : "password"} placeholder="password" className="input input-bordered" required />
+                            <span className="absolute inset-y-0 right-12 bottom-8 flex items-center cursor-pointer" onClick={() => setShowPassword(!showPassword)}>
+                                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                            </span>
                         </div>
                         <div className="form-control mt-6">
                             <input className="btn btn-primary" type="submit" value="Login" />
