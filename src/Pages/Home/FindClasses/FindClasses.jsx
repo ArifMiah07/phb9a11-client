@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import '../../../Styles/Fonts/GoogleFonts.css'
 import FindClassesCard from './FindClassesCard';
+import { Link } from 'react-router-dom';
 
 const FindClasses = () => {
 
@@ -35,7 +36,11 @@ const FindClasses = () => {
                         aboutData.map((data, idx) => <FindClassesCard key={idx} data={data}></FindClassesCard>)
                     }
                 </div>
-                
+                <div className='my-12 w-full flex flex-col justify-center items-center'>
+                    <Link to={'/classes-details'}>
+                        <button className='aboutBorder bg-yellow-400 text-gray-700 px-4 py-2 rounded-3xl hover:bg-yellow-500'>See Details</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

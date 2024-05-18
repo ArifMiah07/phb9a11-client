@@ -1,14 +1,10 @@
 import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaPinterest, FaYoutube } from "react-icons/fa";
 import SubBanner from "../../../Components/SubBanner/SubBanner";
 import Nav from "../../Shared/NavBar/Nav";
-import ExpertTeachers from "../ExpertTeachers/ExpertTeachers";
-import Testimonials from "../Testimonials/Testimonials";
-import AboutUs from "./AboutUs";
-import AboutUsBanner from "./AboutUsBanner";
-import AboutUsGallery from "./AboutUsGallery";
+import Schedule from "./Schedule";
+import ClassOverview from "./ClassOverview";
 
-
-const About = () => {
+const ClassesDetails = () => {
     return (
         <div>
             <div className="hidden md:block lg:block">
@@ -50,47 +46,21 @@ const About = () => {
             </div>
             <div className="relative">
                 <SubBanner></SubBanner>
-            <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
-                {/* <p>{data._id}</p> */}
-                <h1 className=" text-4xl font-bold ml-12">About Us!</h1>
-                {/* <p>{data.serial}</p> */}
-            </div>
-            </div>
-            <AboutUs></AboutUs>
-            <AboutUsBanner></AboutUsBanner>
-            <ExpertTeachers></ExpertTeachers>
-            <AboutUsGallery></AboutUsGallery>
-            <div>
-                <Testimonials></Testimonials>
-                <div className="bg-[#7763E5] p-12 flex justify-evenly items-center text-white">
-                    <div className="border-2 py-6 px-5">
-                        <h1 className="text-4xl font-black nunito">
-                        15+
-                        </h1>
-                        <p>Expert Teacher</p>
-                    </div>
-                    <div className="border-2 py-6 px-5">
-                        <h1 className="text-4xl font-black nunito">
-                            244+
-                        </h1>
-                        <p>Completed Courses</p>
-                    </div>
-                    <div className="border-2 py-6 px-5">
-                        <h1 className="text-4xl font-black nunito">
-                            455+
-                        </h1>
-                        <p>Students Learner</p>
-                    </div>
-                    <div className="border-2 py-6 px-5">
-                        <h1 className="text-4xl font-black nunito">
-                            241+
-                        </h1>
-                        <p>Students Enrolled</p>
-                    </div>
+                <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
+                    {/* <p>{data._id}</p> */}
+                    <h1 className=" text-4xl font-bold ml-12">Program Details!</h1>
+                    {/* <p>{data.serial}</p> */}
                 </div>
             </div>
+            <div className="my-12">
+                <ClassOverview></ClassOverview>
+            </div>
+            <div className="my-12 ">
+                <Schedule></Schedule>
+            </div>
+            
         </div>
     );
 };
 
-export default About;
+export default ClassesDetails;

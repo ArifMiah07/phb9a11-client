@@ -20,7 +20,7 @@ const NavBar = () => {
 
 
     const navLinks = <>
-        <li><NavLink to={'/home'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Home</NavLink> </li>
+        <li><NavLink to={'/'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Home</NavLink> </li>
         <li><NavLink to={'/pages'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Pages</NavLink> </li>
         <li><NavLink to={'/classes'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Classes</NavLink> </li>
         <li><NavLink to={'/blog'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Blogs</NavLink> </li>

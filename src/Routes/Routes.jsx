@@ -10,6 +10,7 @@ import CategoryCardDetails from "../Pages/Home/Categorys/CategoryCardDetails";
 import PopularClasses from "../Pages/Home/PopularClasses/PopularClasses";
 import AddService from "../Pages/AddService/AddService";
 import About from "../Pages/Home/About/About";
+import ClassesDetails from "../Pages/Home/FindClasses/ClassesDetails";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         {
           path: '/about',
           element: <About></About>
+        },
+        {
+          path: '/classes-details',
+          element: <ClassesDetails></ClassesDetails>
         },
         {
           path: '/category/:id',
