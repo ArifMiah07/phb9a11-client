@@ -11,6 +11,7 @@ import PopularClasses from "../Pages/Home/PopularClasses/PopularClasses";
 import AddService from "../Pages/AddService/AddService";
 import About from "../Pages/Home/About/About";
 import ClassesDetails from "../Pages/Home/FindClasses/ClassesDetails";
+import CoursesDetails from "../Pages/Home/Categorys/CoursesDetails";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         {
           path: '/classes-details',
           element: <ClassesDetails></ClassesDetails>
+        },
+        {
+          path: 'course-details',
+          element: <CoursesDetails></CoursesDetails>
         },
         {
           path: '/category/:id',

@@ -3,6 +3,7 @@ import '../../../Styles/Fonts/GoogleFonts.css'
 import { MdOutlineStarRate,  MdStarRate} from "react-icons/md";
 import { IoMdTime } from "react-icons/io";
 import { BsCake } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,7 +23,7 @@ const CategoryCardDetailsPost = ({c}) => {
             <div className='w-full   '>
                 <img className='w-full h-full' src={imgLink} alt="" />
             </div>
-            <div className='flex flex-col gap-5 p-5'>
+            <div className='w-full h-full flex flex-col justify-between gap-5 p-5'>
                 <h1 className='flex'>
                     <span className='flex items-center gap-2'><BsCake />{ages}</span><span className='flex items-center gap-2'><IoMdTime />{time}</span>
                 </h1>
@@ -36,6 +37,13 @@ const CategoryCardDetailsPost = ({c}) => {
                     <h1 className='font-extrabold nunito'>{teacher}</h1>
                     </div>
                     <p className='text-[20px] font-extrabold nunito '>{price}</p>
+                </div>
+                <div className="flex items-center">        
+                    <Link to={'/course-details'}>
+                        <button className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
+                            Book Now
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
