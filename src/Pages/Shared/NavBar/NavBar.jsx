@@ -24,6 +24,7 @@ const NavBar = () => {
         <li><NavLink to={'/pages'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Pages</NavLink> </li>
         <li><NavLink to={'/classes'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Classes</NavLink> </li>
         <li><NavLink to={'/blog'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Blogs</NavLink> </li>
+        <li><NavLink to={'/search'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Search</NavLink> </li>
         {user?.email ? 
         <>
             {/* <li><NavLink to={'/bookings'}>Bookings</NavLink></li> */}

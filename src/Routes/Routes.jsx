@@ -12,6 +12,7 @@ import AddService from "../Pages/AddService/AddService";
 import About from "../Pages/Home/About/About";
 import ClassesDetails from "../Pages/Home/FindClasses/ClassesDetails";
 import CoursesDetails from "../Pages/Home/Categorys/CoursesDetails";
+import SearchPage from "../Pages/Search/SearchPage";
 
 const router = createBrowserRouter([
     {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
         {
           path: '/add-services',
           element: <AddService></AddService>
+        },
+        {
+          path: '/search',
+          element: <SearchPage></SearchPage>
         }
       ]
     },
