@@ -1,6 +1,7 @@
 import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchBar from '../../Components/SearchBar/SearchBar';
+import { Helmet } from 'react-helmet-async';
 
 const SearchPage = () => {
 
@@ -48,6 +49,9 @@ const SearchPage = () => {
 
   return (
     <div className="p-4">
+      <Helmet>
+                <title>Search</title>
+      </Helmet>
       <SearchBar onSearch={handleSearch} />
       <div className="mt-4">
         {filteredData.length > 0 ? (

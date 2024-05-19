@@ -2,6 +2,7 @@
 import  { useState, useEffect } from 'react';
 import AllServicesCard from './AllServicesCard';
 import MixHeader from '../../Components/MixHeader/MixHeader';
+import { Helmet } from 'react-helmet-async';
 
 const AllServices = () => {
     
@@ -24,6 +25,9 @@ const AllServices = () => {
     
       return (
         <div className="w-full">
+          <Helmet>
+                <title>All Services</title>
+          </Helmet>
           <MixHeader text={text} ></MixHeader>
           <div className="p-4 ">
             {

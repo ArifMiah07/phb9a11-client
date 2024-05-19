@@ -3,6 +3,7 @@ import CategoryCardDetailsPost from "./CategoryCardDetailsPost";
 import SubBanner from "../../../Components/SubBanner/SubBanner";
 import Nav from "../../Shared/NavBar/Nav";
 import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP, FaYoutube } from 'react-icons/fa';
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -19,6 +20,9 @@ const CategoryCardDetails = () => {
     // console.log('asmalt heke ifd:',id, categoryData);
     return (
         <div>
+            <Helmet>
+                <title>Category Card Details</title>
+            </Helmet>
             <div className="hidden md:block lg:block">
                 <div className=" bg-purple-500 text-white flex justify-between items-center p-2">
                     {/* Contact Info */}

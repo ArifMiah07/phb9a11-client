@@ -8,6 +8,7 @@ import NavBar from "../Shared/NavBar/NavBar";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
@@ -54,8 +55,10 @@ const Register = () => {
             })
     };
     return (
-        <div className="  ">
-            
+        <div className="w-full ">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <div>
                 <NavBar></NavBar>
             </div>

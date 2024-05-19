@@ -2,60 +2,26 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaPinterest
 import Nav from "../../Shared/NavBar/Nav";
 import SubBanner from "../../../Components/SubBanner/SubBanner";
 import CourseOverview from "./CourseOverview";
+import MixHeader from "../../../Components/MixHeader/MixHeader";
+import { Helmet } from "react-helmet-async";
 // import ClassOverview from "../FindClasses/ClassOverview";
 
 // 
 
-const CoursesDetails = () => {
+const CoursesDetails = ({heading1, sl, loaderData}) => {
+
+    console.log(heading1, sl, loaderData);
+
+
+    const nText = [heading1,sl]
     return (
         <div className="w-full">
-            <div className="hidden md:block lg:block">
-                <div className=" bg-purple-500 text-white flex justify-between items-center p-2">
-                    {/* Contact Info */}
-                    <div className="flex items-center space-x-4">
-                        <div className="flex items-center space-x-1">
-                            <FaEnvelope className="h-5 w-5" />
-                            <span>info@Smartkidz.com</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                            <FaPhone className="h-5 w-5" />
-                            <span>+61 012 012 445</span>
-                        </div>
-                    </div>
-
-                    {/* Social Icons */}
-                    <div className="flex space-x-4">
-                        <a href="#" className="hover:text-gray-300">
-                            <FaFacebook className="h-5 w-5" />
-                        </a>
-                        <a href="#" className="hover:text-gray-300">
-                            <FaInstagram className="h-5 w-5" />
-                        </a>
-                        <a href="#" className="hover:text-gray-300">
-                            <FaLinkedinIn className="h-5 w-5" />
-                        </a>
-                        <a href="#" className="hover:text-gray-300">
-                            <FaPinterest className="h-5 w-5" />
-                        </a>
-                        <a href="#" className="hover:text-gray-300">
-                            <FaYoutube className="h-5 w-5" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <Nav></Nav>
-            </div>
-            <div className="relative">
-                <SubBanner></SubBanner>
-                <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
-                    {/* <p>{data._id}</p> */}
-                    <h1 className=" text-4xl font-bold ml-12">Program Details!</h1>
-                    {/* <p>{data.serial}</p> */}
-                </div>
-            </div>
+            <Helmet>
+                <title>Course Details</title>
+            </Helmet>
+            <MixHeader text={nText}></MixHeader>
             <div className="my-12">
-                <CourseOverview></CourseOverview>
+                <CourseOverview heading1={heading1} sl={sl} loaderData={loaderData}></CourseOverview>
             </div>
             {/* <div className="my-12 ">
 

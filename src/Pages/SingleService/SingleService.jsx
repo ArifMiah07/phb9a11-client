@@ -3,6 +3,7 @@ import { MdOutlineStarRate,  MdStarRate} from "react-icons/md";
 import { IoMdTime } from "react-icons/io";
 import { BsCake } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -38,6 +39,9 @@ const SingleService = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Single Services</title>
+            </Helmet>
             <h1>Service {id}</h1>
             {matchedContent ? (
                 <div className={`aboutBorder rounded-none flex flex-col gap-4 text-white ${matchedContent.sl === 1 ? 'bg-[#7763E5]' : matchedContent.sl === 2 ? 'bg-[#FF6D1C]' : matchedContent.sl === 3 ? 'bg-[#B54CCA]' : matchedContent.sl === 4 ? 'bg-[#09A24F]' : matchedContent.sl === 5 ? 'bg-[#C29663]' : matchedContent.sl === 6 ? 'bg-[#A89222]' : matchedContent.sl === 7 ? 'bg-[#FF4E41]' : matchedContent.sl === 8 ? 'bg-[#20AD96]' : ''} `}>

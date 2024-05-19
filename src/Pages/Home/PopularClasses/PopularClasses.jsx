@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import PopularClassesCard from "./PopularClassesCard";
 import { useEffect, useState } from "react";
 
@@ -20,6 +21,9 @@ const PopularClasses = () => {
 
     return (
         <div className=' w-full flex flex-col justify-between gap-6 p-6'>
+            <Helmet>
+                <title>Popular Classes</title>
+            </Helmet>
             <div className=' flex flex-col md:flex md:flex-col lg:flex lg:flex-col'>
                 <div className='text-center'>
                     <h1 className='font-semibold mt-6 text-[20px] inter flex items-center justify-center'><span><img src="https://html.themewant.com/studykids/assets/images/banner/title-img.svg" alt="" /></span> Category</h1>

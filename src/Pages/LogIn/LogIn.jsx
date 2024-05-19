@@ -8,6 +8,7 @@ import NavBar from '../Shared/NavBar/NavBar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const LogIn = () => {   
 
@@ -37,6 +38,9 @@ const LogIn = () => {
 
     return (
         <div className=" ">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
         <ToastContainer />
             <div>
                 <NavBar></NavBar>

@@ -6,11 +6,15 @@ import Testimonials from "../Testimonials/Testimonials";
 import AboutUs from "./AboutUs";
 import AboutUsBanner from "./AboutUsBanner";
 import AboutUsGallery from "./AboutUsGallery";
+import { Helmet } from "react-helmet-async";
 
 
 const About = () => {
     return (
-        <div>
+        <div className="w-full">
+            <Helmet>
+                <title>About</title>
+            </Helmet>
             <div className="hidden md:block lg:block">
                 <div className=" bg-purple-500 text-white flex justify-between items-center p-2">
                     {/* Contact Info */}

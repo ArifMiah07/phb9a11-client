@@ -20,6 +20,7 @@ import ServiceToDo from "../Pages/ServiceToDo/ServiceToDo";
 import AllServices from "../Pages/AllServices/AllServices";
 import PrivateRoute from "./PrivateRoute";
 import SingleService from "../Pages/SingleService/SingleService";
+import SingleServicesPage from "../Components/SigleServicePage/SingleServicesPage";
 
 const router = createBrowserRouter([
     {
@@ -93,7 +94,12 @@ const router = createBrowserRouter([
         {
           path: '/search',
           element: <SearchPage></SearchPage>
-        }
+        },
+        {
+          path: '/:heading1/:sl',
+          element: <SingleServicesPage />,
+          loader: () => fetch('http://localhost:5000/category')
+        }        
       ]
     },
   ]);

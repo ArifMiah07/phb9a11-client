@@ -7,7 +7,7 @@ import CourseCard from './CourseCard';
 
 
 
-const CourseOverview = () => {
+const CourseOverview = ({loaderData, heading1, sl}) => {
 
     const bs = {
         boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"
@@ -168,7 +168,7 @@ const CourseOverview = () => {
         {/* Details Section */}
         <div className="w-full h- md:w-1/2 p-6">
           <div>
-            <CourseCard></CourseCard>
+            <CourseCard heading1={heading1} sl={sl} loaderData={loaderData}></CourseCard>
           </div>
           <div>
             <CourseInfo></CourseInfo>

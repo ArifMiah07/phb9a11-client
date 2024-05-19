@@ -4,6 +4,7 @@ import { AuthContext } from "../../Contexts/AuthProvider";
 import Nav from "../Shared/NavBar/Nav";
 import SubBanner from "../../Components/SubBanner/SubBanner";
 import ContactNav from "../../Components/ContactNav/ContactNav";
+import { Helmet } from "react-helmet-async";
 
 const AddService = () => {
 
@@ -70,6 +71,9 @@ const AddService = () => {
 
     return (
         <div className="card shrink-0 w-full shadow-2xl bg-[#F3F3F3] ">
+            <Helmet>
+                <title>Add Services</title>
+            </Helmet>
             <div className="w-full">
                 <ContactNav></ContactNav>
                 <Nav></Nav>

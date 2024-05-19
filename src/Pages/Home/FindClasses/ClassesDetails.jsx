@@ -3,10 +3,14 @@ import SubBanner from "../../../Components/SubBanner/SubBanner";
 import Nav from "../../Shared/NavBar/Nav";
 import Schedule from "./Schedule";
 import ClassOverview from "./ClassOverview";
+import { Helmet } from "react-helmet-async";
 
 const ClassesDetails = () => {
     return (
-        <div>
+        <div className="w-full">
+            <Helmet>
+                <title>Classes Details</title>
+            </Helmet>
             <div className="hidden md:block lg:block">
                 <div className=" bg-purple-500 text-white flex justify-between items-center p-2">
                     {/* Contact Info */}

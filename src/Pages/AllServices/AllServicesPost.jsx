@@ -6,7 +6,8 @@ import { BsCake } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 
-const AllServicesPost = ({c}) => {
+const AllServicesPost = ({c, cData}) => {
+    
 
 
     const a = [];
@@ -42,10 +43,10 @@ const AllServicesPost = ({c}) => {
                             Book Now
                         </button>
                     </Link>
-                    <Link to={'/course-details'}>
-                        <button className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
-                            See Details
-                        </button>
+                    <Link to={`/${cData?.heading1}/${sl}`}>
+                    <button className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
+                        View Details
+                    </button>
                     </Link>
                 </div>
             </div>
@@ -53,6 +54,7 @@ const AllServicesPost = ({c}) => {
     );
 };
 AllServicesPost.propTypes = {
-    c: PropTypes.object
+    c: PropTypes.object,
+    cData: PropTypes.object
 }
 export default AllServicesPost;
