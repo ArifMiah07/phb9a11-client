@@ -1,43 +1,52 @@
 import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
+import Nav from "../Shared/NavBar/Nav";
+import SubBanner from "../../Components/SubBanner/SubBanner";
+import ContactNav from "../../Components/ContactNav/ContactNav";
 
 const AddService = () => {
 
-    const service = useLoaderData();
+    // const service = useLoaderData();
 
     const {user} = useContext(AuthContext);
 
     //console.log(service);
-    const {title, _id, price, img} = service;
+    // const {title, _id, price, img} = service;
 
 
     const handleOrderNow = (e)=>{
         e.preventDefault();
 
         const form = e.target;
-        const name = form.name.value;
+        const service_name = form.service_name.value;
         const email = user?.email;
         const date = form.date.value;
         const price = form.price.value;
-        const massage = form.massage.value;
+        const description = form.description.value;
+        const imageUrl = form.imageUrl.value;
+        const area = form.area.value;
+        const providerEmail = user?.email;
+        const providerImage = user?.photoURL;
+        const providerName = user?.displayName;
 
 
         const bookOrderData ={
-            customerName: name, 
+            service_name,
             email, 
             date, 
             price,
-            massage,
-            service: title,
-            service_id: _id,
-            img
-
+            description,
+            imageUrl,
+            area,
+            providerEmail,
+            providerImage,
+            providerName
         }
 
-        //console.log(bookOrderData);
+        console.log(bookOrderData);
 
-        fetch('http://localhost:5000/bookings',{
+        fetch('http://localhost:5000/add-service',{
             method: 'POST', 
             headers: {
                 'content-type' : 'application/json'
@@ -46,7 +55,7 @@ const AddService = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            //console.log(data);
+            console.log(data);
             if(data.insertedId){
                 alert('service book successfully!')
                 // form.reset();
@@ -60,58 +69,76 @@ const AddService = () => {
 
 
     return (
-        <div className="card shrink-0 w-full shadow-2xl bg-[#F3F3F3] p-24">
-            <h2 className="text-center text-3xl font-bold">Check Out: {title}</h2>
+        <div className="card shrink-0 w-full shadow-2xl bg-[#F3F3F3] ">
+            <div className="w-full">
+                <ContactNav></ContactNav>
+                <Nav></Nav>
+                <div className="relative">
+                    <SubBanner></SubBanner>
+                    <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
+                    {/* <p>{data._id}</p> */}
+                    <h1 className=" text-4xl font-bold ml-12">Add Service!</h1>
+                    {/* <p>{data.serial}</p> */}
+                    </div>
+                </div>
+            </div>
+            <h2 className="text-center text-3xl font-bold">Check Out: {''}</h2>
             <form onSubmit={handleOrderNow} className="card-body">
                 <div className="grid md:grid lg:grid lg:grid-cols-2 gap-8">
-                    <div className="form-control">
+                    {/* <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
                         <input name="name" defaultValue={user?.displayName} type="text" placeholder="First Name" className="input input-bordered" required />
-                    </div>
-                    {/* <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Last Name</span>
-                        </label>
-                        <input name="last_name" type="last_name" placeholder="Last Name" className="input input-bordered" required />
                     </div> */}
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Image Url</span>
+                        </label>
+                        <input name="imageUrl" type="text" placeholder="Last Name" className="input input-bordered" required />
+                    </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Date</span>
                         </label>
                         <input name="date" type="Date" placeholder="Last Name" className="input input-bordered" required />
                     </div>
-                    {/* <div className="form-control">
+                    <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Phone</span>
+                            <span className="label-text">Service Name</span>
                         </label>
-                        <input name="phone" type="number" placeholder="Your Phone" className="input input-bordered" required />
-                    </div> */}
+                        <input name="service_name" type="text" placeholder="Service name" className="input input-bordered" required />
+                    </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input name="email" type="email" defaultValue={user?.email} placeholder="Your email" className="input input-bordered" required />
+                        <input  name="email" type="email" defaultValue={user?.email} placeholder="Your email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Due Amount</span>
+                            <span className="label-text">Price</span>
                         </label>
-                        <input name="price" type="text" defaultValue={'$'+ price}  placeholder="Your Amount" className="input input-bordered" required />
+                        <input name="price" type="text" defaultValue={'$'+ ''}  placeholder="Your Amount" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Service Area</span>
+                        </label>
+                        <input name="area" type="text" defaultValue={''}  placeholder="Service Area" className="input input-bordered" required />
                     </div>
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Massage</span>
+                        <span className="label-text">Description</span>
                     </label>
                     {/* <input  type="email" placeholder="Your email" className="input input-bordered" required /> */}
-                    <textarea className="p-6" cols="30" rows="10" type="text" placeholder="Your Massage"   name="massage" id=""></textarea>
+                    <textarea className="p-6" cols="30" rows="10" type="text" placeholder="Your Massage"   name="description" id=""></textarea>
                 </div>
                 
                 <div className="form-control mt-6">
                     {/* <button>Login</button> */}
-                    <input  className="btn text-white text-[20px] font-semibold bg-[#FF3811]" type="submit" value={'Order Conform'} />
+                    <input  className="btn text-white text-[20px] font-semibold bg-[#FF3811]" type="submit" value={'Add'} />
                 </div>
             </form>
         </div>

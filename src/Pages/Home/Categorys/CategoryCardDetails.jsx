@@ -59,9 +59,9 @@ const CategoryCardDetails = () => {
             <div className="relative">
                 <SubBanner></SubBanner>
             <h1 className="absolute w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
-                <p>{data._id}</p>
-                this is category card details!
-                <p>{data.serial}</p>
+                <p className="text-4xl nunito ">{data.heading1}</p>
+                {/* this is category card details! */}
+                <p className="inter">Details About {data.heading1}</p>
             </h1>
             </div>
             <div className="p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-8">

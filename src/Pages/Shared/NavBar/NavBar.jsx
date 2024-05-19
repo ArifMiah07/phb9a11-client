@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
+import { useContext, } from 'react';
+import { AuthContext } from '../../../Contexts/AuthProvider';
 import  '../../../Styles/Fonts/GoogleFonts.css'
 import brain_icon from '../../../assets/brain-icon-flat.png'
 import './navbar.css'
-import { useContext } from 'react';
-import { AuthContext } from '../../../Contexts/AuthProvider';
-const NavBar = () => {
+import DashboardDropdown from '../../../Components/DashboardDropdown/DashboardDropdown';
 
+const NavBar = () => {
+    
     const {user, logOut} = useContext(AuthContext);
     const handleLogOut = ()=>{
         logOut()
@@ -16,9 +18,6 @@ const NavBar = () => {
             console.log(error);
         })
     }
-
-
-
     const navLinks = <>
         <li><NavLink to={'/'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Home</NavLink> </li>
         <li><NavLink to={'/pages'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Pages</NavLink> </li>
@@ -26,13 +25,16 @@ const NavBar = () => {
         <li><NavLink to={'/blog'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Blogs</NavLink> </li>
         <li><NavLink to={'/search'} className="text-black hover:text-yellow-400 hover:text-[21px] ">Search</NavLink> </li>
         {user?.email ? 
-        <>
+        <>  
             {/* <li><NavLink to={'/bookings'}>Bookings</NavLink></li> */}
+
+            <DashboardDropdown />
+            
             <li><button className="text-black hover:text-yellow-400 hover:text-[21px]" onClick={handleLogOut}>Log Out</button></li>
         </> :
         <li><NavLink to={'/login'} className="text-black hover:text-yellow-400 hover:text-[21px] ">login</NavLink> </li>
         }
-        
+    
     </>
   return (
     <div className="navbar  rounded-[85px]  custom-box-shadow bg-[#FFFFFF] flex justify-between items-center px-4 py-2 text-white">
@@ -56,6 +58,7 @@ const NavBar = () => {
             </ul>
         </div>
         <div>
+            
         </div>
         <div className="navbar-end">
             <button className="glow-effect admissionNow bg-yellow-400 text-gray-700 px-4 py-2 rounded-3xl hover:bg-yellow-500">

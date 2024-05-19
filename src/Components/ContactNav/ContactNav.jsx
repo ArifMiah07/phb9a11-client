@@ -1,12 +1,7 @@
 import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaPinterest, FaYoutube } from "react-icons/fa";
-import Nav from "../../Shared/NavBar/Nav";
-import SubBanner from "../../../Components/SubBanner/SubBanner";
-import CourseOverview from "./CourseOverview";
-// import ClassOverview from "../FindClasses/ClassOverview";
 
-// 
 
-const CoursesDetails = () => {
+const ContactNav = () => {
     return (
         <div className="w-full">
             <div className="hidden md:block lg:block">
@@ -43,26 +38,8 @@ const CoursesDetails = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <Nav></Nav>
-            </div>
-            <div className="relative">
-                <SubBanner></SubBanner>
-                <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
-                    {/* <p>{data._id}</p> */}
-                    <h1 className=" text-4xl font-bold ml-12">Program Details!</h1>
-                    {/* <p>{data.serial}</p> */}
-                </div>
-            </div>
-            <div className="my-12">
-                <CourseOverview></CourseOverview>
-            </div>
-            {/* <div className="my-12 ">
-
-            </div> */}
-            
         </div>
     );
 };
 
-export default CoursesDetails;
+export default ContactNav;

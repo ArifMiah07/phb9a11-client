@@ -31,7 +31,7 @@ const Events = () => {
 
     
     return (
-        <div className='p-4 border border-red-400 w-full flex flex-col  justify-between gap-6 '>
+        <div className='p-4  w-full flex flex-col  justify-between gap-6 '>
                 <div className='text-center'>
                     <h1 className='font-semibold mt-6 text-[20px] inter flex items-center justify-center text-center'><span><img src="https://html.themewant.com/studykids/assets/images/banner/title-img.svg" alt="" /></span>Event</h1>
                     <h1 className='nunito text-[48px] my-5 font-extrabold  '>Upcoming Events</h1>
@@ -45,8 +45,8 @@ const Events = () => {
                 {/* <div className='my-12'>
                     <button className='aboutBorder bg-yellow-400 text-gray-700 px-4 py-2 rounded-3xl hover:bg-yellow-500'>About More</button>
                 </div> */}
-            <div className='h-full w-full mt-24  border border-red-400 flex flex-row'>
-                <Marquee speed={30} pauseOnHover={true} className='flex h-full w-full gap-5 p-2 border border-green-600'>
+            <div className='h-full w-full mt-24   flex flex-row'>
+                <Marquee speed={30} pauseOnHover={true} className='flex h-full w-full gap-5 p-2  '>
                     <div><img className='w-[120px] h-[120px] ml-12 ' src={img1} alt="" /></div>
                     <div><img className='w-[120px] h-[120px] ml-12 ' src={img2} alt="" /></div>
                     <div><img className='w-[120px] h-[120px] ml-12 ' src={img3} alt="" /></div>

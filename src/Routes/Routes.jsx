@@ -13,6 +13,13 @@ import About from "../Pages/Home/About/About";
 import ClassesDetails from "../Pages/Home/FindClasses/ClassesDetails";
 import CoursesDetails from "../Pages/Home/Categorys/CoursesDetails";
 import SearchPage from "../Pages/Search/SearchPage";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import ManageService from "../Pages/ManageService/ManageService";
+import BookedServices from "../Pages/BookedServices/BookedServices";
+import ServiceToDo from "../Pages/ServiceToDo/ServiceToDo";
+import AllServices from "../Pages/AllServices/AllServices";
+import PrivateRoute from "./PrivateRoute";
+import SingleService from "../Pages/SingleService/SingleService";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +32,22 @@ const router = createBrowserRouter([
             element: <Home></Home>
         },
         {
+          path: '/add-service',
+          element: <PrivateRoute><AddService></AddService></PrivateRoute>
+        },
+        {
+          path: '/manage-service',
+          element: <PrivateRoute><ManageService></ManageService></PrivateRoute>
+        },
+        {
+          path: '/booked-services',
+          element: <PrivateRoute> <BookedServices></BookedServices></PrivateRoute>
+        },
+        {
+          path: '/service-to-do',
+          element: <PrivateRoute><ServiceToDo></ServiceToDo></PrivateRoute>
+        },
+        {
           path: '/about',
           element: <About></About>
         },
@@ -33,7 +56,7 @@ const router = createBrowserRouter([
           element: <ClassesDetails></ClassesDetails>
         },
         {
-          path: 'course-details',
+          path: '/course-details',
           element: <CoursesDetails></CoursesDetails>
         },
         {
@@ -47,6 +70,10 @@ const router = createBrowserRouter([
           loader: ()=> fetch('http://localhost:5000/category')
         },
         {
+          path: '/dashboard',
+          element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+        },
+        {
             path: '/login',
             element: <LogIn></LogIn>
         },
@@ -55,8 +82,13 @@ const router = createBrowserRouter([
             element: <Register></Register>
         },
         {
-          path: '/add-services',
-          element: <AddService></AddService>
+          path: '/all-services',
+          element:<PrivateRoute><AllServices></AllServices></PrivateRoute>
+        },
+        {
+          path: '/single-service/:id',
+          element: <SingleService></SingleService>,
+          loader: ()=> fetch('http://localhost:5000/category')
         },
         {
           path: '/search',

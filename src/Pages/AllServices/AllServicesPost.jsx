@@ -1,21 +1,19 @@
 import PropTypes from 'prop-types';
-import '../../../Styles/Fonts/GoogleFonts.css'
+// import '../../../Styles/Fonts/GoogleFonts.css'
 import { MdOutlineStarRate,  MdStarRate} from "react-icons/md";
 import { IoMdTime } from "react-icons/io";
 import { BsCake } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 
-
-
-const CategoryCardDetailsPost = ({c}) => {
+const AllServicesPost = ({c}) => {
 
 
     const a = [];
     for (let i = 0; i < 4; i++) {  
         a.push(<MdStarRate key={i} />);
     }
-    // console.log(a);
+    console.log(c);
     const {sl, imgT, ages, time, rating, teacher, price, imgLink: imgLink, heading1,} = c;
     // console.log(sl, imgT, ages, time, rating, teacher, price, imgLink, heading1);
     return (
@@ -54,9 +52,7 @@ const CategoryCardDetailsPost = ({c}) => {
         </div>
     );
 };
-
-CategoryCardDetailsPost.propTypes = {
+AllServicesPost.propTypes = {
     c: PropTypes.object
 }
-
-export default CategoryCardDetailsPost;
+export default AllServicesPost;

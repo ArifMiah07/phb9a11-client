@@ -74,13 +74,13 @@ Ways to Create A Montessori Home Environment
 
     
     return (
-        <div className='mt-12 border border-red-400 w-full flex flex-col justify-between gap-6 p-6'>
+        <div className='mt-12 w-full flex flex-col justify-between gap-6 p-6'>
             <div className='text-center'>
-                <h1 className='font-semibold mt-6 text-[20px] inter flex items-center justify-center'><span><img src="https://html.themewant.com/studykids/assets/images/banner/title-img.svg" alt="" /></span> Category</h1>
-                <h1 className='nunito text-[48px] my-5 font-extrabold  '>Popular class topics</h1>
-                <p className='inter text-[rgb(115_116_119)] mb-6 '>marked by significant growth and exploration as <br />toddlers transition from infancy</p>
+                <h1 className='font-semibold mt-6 text-[20px] inter flex items-center justify-center'><span><img src="https://html.themewant.com/studykids/assets/images/banner/title-img.svg" alt="" /></span> Blog & News</h1>
+                <h1 className='nunito text-[48px] my-5 font-extrabold  '>Welcome to SmartKidz blog</h1>
+                <p className='inter text-[rgb(115_116_119)] mb-6 '>A quick directory of Studykids most popular blogs on parenting, <br /> homeschooling, curriculum, supplementing your kids</p>
             </div>
-            <div className='gap-12 border border-red-400 flex flex-col md:flex md:flex-row lg:flex lg:flex-row'>
+            <div className='gap-12 flex flex-col md:flex md:flex-row lg:flex lg:flex-row'>
                 <div className='bg-[#FF6D1C] rounded-lg text-white p-6  flex flex-col gap-6' style={{boxShadow: '01px 2px 03px 04px rgb(0, 0, 0)'}} >
                     <div className="rounded-lg" style={{boxShadow: '01px 2px 03px 04px rgb(0, 0, 0)'}} >
                         <img src="https://html.themewant.com/studykids/assets/images/blog/blog-01.jpg" alt="" />

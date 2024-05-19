@@ -5,11 +5,11 @@ import '../../../Styles/Fonts/GoogleFonts.css'
 
 const AboutUsBanner = () => {
     return (
-        <div className='border border-red-400 bg-[#FFEFE5] py-20 w-full flex flex-col md:flex md:flex-col lg:flex lg:flex-row-reverse justify-between gap-6 '>
-            <div className='p-6 flex justify-center items-center border border-red-400 lg:w-1/2'>
+        <div className=' bg-[#FFEFE5] py-20 w-full flex flex-col md:flex md:flex-col lg:flex lg:flex-row-reverse justify-between gap-6 '>
+            <div className='p-6 flex justify-center items-center  lg:w-1/2'>
                 <img src="https://html.themewant.com/studykids/assets/images/about/about-02.png" alt="" />
             </div>
-            <div className=' border border-red-400 flex flex-col justify-center items-center md:flex md:flex-col lg:flex lg:flex-col'>
+            <div className='  flex flex-col justify-center items-center md:flex md:flex-col lg:flex lg:flex-col'>
                 <div className='text-center'>
                     <h1 className='font-semibold mt-6 text-[20px] inter flex items-center justify-center nunito'><span><img src="https://html.themewant.com/studykids/assets/images/banner/title-img.svg" alt="" /></span> About us</h1>
                     <h1 className='nunito text-[48px] my-5 font-extrabold nunito '>Discover Our Mission for <br />SmartKizs Academy</h1>

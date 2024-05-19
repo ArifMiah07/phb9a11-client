@@ -50,11 +50,11 @@ const About = () => {
             </div>
             <div className="relative">
                 <SubBanner></SubBanner>
-            <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
+                <div className="absolute flex items-center w-full h-full text-white top-0 bg-gradient-to-r from-[#151515bf] to-[rgba(21, 21, 21, 0.00) 100%)]  ] ">
                 {/* <p>{data._id}</p> */}
                 <h1 className=" text-4xl font-bold ml-12">About Us!</h1>
                 {/* <p>{data.serial}</p> */}
-            </div>
+                </div>
             </div>
             <AboutUs></AboutUs>
             <AboutUsBanner></AboutUsBanner>

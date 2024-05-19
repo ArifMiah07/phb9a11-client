@@ -14,7 +14,21 @@ const CourseCard = () => {
       <div className="text-4xl font-bold flex items-center gap-6">$39.99
         <div className="bg-yellow-400 text-xl text-black font-bold px-2 py-1 rounded inline-block mt-2">100%</div>
       </div>
-      <button style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}} className="bg-yellow-400 text-black font-bold py-2 px-4 rounded mt-4 w-full">Add To Cart</button>
+      {/* You can open the modal using document.getElementById('ID').showModal() method */}
+        <button className="btn w-full mt-5" onClick={()=>document.getElementById('my_modal_4').showModal()}><span style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}} className="bg-yellow-400 text-black font-bold py-2 px-4 rounded mt-4 w-full">Book Now</span></button>
+        <dialog id="my_modal_4" className="modal">
+        <div className="modal-box w-11/12 max-w-5xl">
+            <h3 className="font-bold text-lg">Hello!</h3>
+            <p className="py-4">Click the button below to close</p>
+            <div className="modal-action">
+            <form method="dialog">
+                {/* if there is a button, it will close the modal */}
+                <button className="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+      {/* <span style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}} className="bg-yellow-400 text-black font-bold py-2 px-4 rounded mt-4 w-full">Book Now</span> */}
       <div className="text-sm text-gray-600 mt-4">30-Day Money-Back Guarantee</div>
       <div className="mt-4">
         <h2 className="text-xl font-bold mb-2">This course includes:</h2>

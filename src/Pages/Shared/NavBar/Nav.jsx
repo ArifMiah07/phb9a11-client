@@ -4,6 +4,7 @@ import brain_icon from '../../../assets/brain-icon-flat.png'
 import './navbar.css'
 import { useContext } from 'react';
 import { AuthContext } from '../../../Contexts/AuthProvider';
+import DashboardDropdown from '../../../Components/DashboardDropdown/DashboardDropdown';
 const Nav = () => {
     const {user, logOut} = useContext(AuthContext);
     const handleLogOut = ()=>{
@@ -27,6 +28,7 @@ const Nav = () => {
         {user?.email ? 
         <>
             {/* <li><NavLink to={'/bookings'}>Bookings</NavLink></li> */}
+            <DashboardDropdown />
             <li><button className="text-black hover:text-yellow-400 hover:text-[21px]" onClick={handleLogOut}>Log Out</button></li>
         </> :
         <li><NavLink to={'/login'} className="text-black hover:text-yellow-400 hover:text-[21px] ">login</NavLink> </li>
