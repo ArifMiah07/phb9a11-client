@@ -4,7 +4,7 @@ import '../../Styles/Fonts/GoogleFonts.css'
 const ServiceToDoRow = ({bs}) => {
 
     
-    console.log(bs);
+    // console.log(bs);
     
 
     

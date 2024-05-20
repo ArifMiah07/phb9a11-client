@@ -11,7 +11,7 @@ const AboutUs = () => {
     const [aboutData, setAboutData] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/about-us')
+        fetch('https://smart-kidz-server-liard.vercel.app/about-us')
         .then(res => res.json())
         .then(data => {
             // console.log(data); 

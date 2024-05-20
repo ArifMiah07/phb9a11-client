@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const axiosSecure = axios.create({
     // baseURL: 'https://car-doctor-sever-main.vercel.app',
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://smart-kidz-server-liard.vercel.app',
     withCredentials: true
 })
 

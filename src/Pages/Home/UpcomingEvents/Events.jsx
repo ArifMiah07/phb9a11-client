@@ -17,7 +17,7 @@ const Events = () => {
     const [aboutData, setAboutData] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/events')
+        fetch('https://smart-kidz-server-liard.vercel.app/events')
         .then(res => res.json())
         .then(data => {
             // console.log(data); 

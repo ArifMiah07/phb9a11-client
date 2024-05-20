@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet-async';
 const SingleServicesPage = () => {
 
 const loaderData = useLoaderData();
+const { heading1, sl } = useParams();
 // const a = [1, 2, 3, 4, 5, 6];
 
 // // Accessing elements directly:
@@ -23,9 +24,9 @@ const loaderData = useLoaderData();
 
 // console.log(newArray);
 // console.log(b);
-// console.log(loaderData);
+console.log(loaderData);
+console.log( heading1, sl);
 
-const { heading1, sl } = useParams();
 
     return (
         <div>
@@ -33,7 +34,6 @@ const { heading1, sl } = useParams();
                 <title>Single Services Page</title>
             </Helmet>
             <h1>{heading1}  {sl}</h1>
-            {/* <Obj sl={sl}></Obj> */}
             <CoursesDetails  loaderData={loaderData} sl={sl} heading1={heading1}></CoursesDetails>
         </div>
     );

@@ -63,12 +63,12 @@ const router = createBrowserRouter([
         {
           path: '/category/:id',
           element: <CategoryCardDetails></CategoryCardDetails>,
-          loader: ()=> fetch('http://localhost:5000/category')
+          loader: ()=> fetch('https://smart-kidz-server-liard.vercel.app/category')
         },
         {
           path: '/popular-classes',
           element: <PopularClasses></PopularClasses>,
-          loader: ()=> fetch('http://localhost:5000/category')
+          loader: ()=> fetch('https://smart-kidz-server-liard.vercel.app/category')
         },
         {
           path: '/dashboard',
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
         {
           path: '/single-service/:id',
           element: <SingleService></SingleService>,
-          loader: ()=> fetch('http://localhost:5000/category')
+          loader: ()=> fetch('https://smart-kidz-server-liard.vercel.app/category')
         },
         {
           path: '/search',
@@ -98,7 +98,7 @@ const router = createBrowserRouter([
         {
           path: '/:heading1/:sl',
           element: <PrivateRoute><SingleServicesPage /></PrivateRoute>,
-          loader: () => fetch('http://localhost:5000/category')
+          loader: () => fetch('https://smart-kidz-server-liard.vercel.app/category')
         }        
       ]
     },

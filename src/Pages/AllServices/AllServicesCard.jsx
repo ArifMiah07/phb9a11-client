@@ -4,9 +4,9 @@ import AllServicesPost from './AllServicesPost';
 
 
 const AllServicesCard = ({cData}) => {
-    console.log(cData);
+    // console.log(cData);
     const {content} =cData;
-    console.log(content);
+    // console.log(content);
     return (
         <div className='w-full fle flex-col gap-6'>
             <h1 className='text-3xl my-6'>{cData.heading1}</h1>

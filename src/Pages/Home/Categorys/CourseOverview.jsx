@@ -4,10 +4,13 @@ import { FaPlayCircle } from "react-icons/fa";
 import ProfileCard from './ProfileCard';
 import CourseInfo from './CourseInfo';
 import CourseCard from './CourseCard';
+import PropTypes from 'prop-types';
 
 
 
 const CourseOverview = ({loaderData, heading1, sl}) => {
+
+    console.log(heading1, sl, loaderData);
 
     const bs = {
         boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"
@@ -178,5 +181,12 @@ const CourseOverview = ({loaderData, heading1, sl}) => {
     </div>
   );
 };
+
+
+CourseOverview.propTypes = {
+    loaderData: PropTypes.array,
+    heading1: PropTypes.string,
+    sl: PropTypes.string
+}
 
 export default CourseOverview;

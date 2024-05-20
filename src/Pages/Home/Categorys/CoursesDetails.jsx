@@ -10,10 +10,10 @@ import { Helmet } from "react-helmet-async";
 
 const CoursesDetails = ({heading1, sl, loaderData}) => {
 
-    // console.log(heading1, sl, loaderData);
+    console.log(heading1, sl, loaderData);
 
 
-    const nText = [heading1,sl]
+    const nText = [heading1, sl]
     return (
         <div className="w-full">
             <Helmet>

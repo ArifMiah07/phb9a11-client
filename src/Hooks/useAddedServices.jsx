@@ -5,7 +5,7 @@ const useAddedServices = () => {
     const [services, setServices] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/add-services')
+        fetch('https://smart-kidz-server-liard.vercel.app/add-services')
         .then(res => res.json())
         .then(data => {
             // //console.log(data);

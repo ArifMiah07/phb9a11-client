@@ -14,10 +14,10 @@ const BookedServices = () => {
   
   //get provider data from db
     useEffect( () =>{
-      fetch('http://localhost:5000/bookings')
+      fetch('https://smart-kidz-server-liard.vercel.app/bookings')
       .then(res => res.json())
       .then(data => {
-        console.log(data);
+        // console.log(data);
         setProvider(data);
       })
       .catch(error => {
@@ -25,7 +25,7 @@ const BookedServices = () => {
       })
     } , [])
 
-        console.log(bookedServices);
+        // console.log(bookedServices);
 
         // const p = provider.find(u => {
         //   if(u.email === user?.email){

@@ -47,9 +47,9 @@ const AddService = () => {
             providerName
         }
 
-        console.log(bookOrderData);
+        // console.log(bookOrderData);
 
-        fetch('http://localhost:5000/add-service',{
+        fetch('https://smart-kidz-server-liard.vercel.app/add-service',{
             method: 'POST', 
             headers: {
                 'content-type' : 'application/json'
@@ -58,7 +58,7 @@ const AddService = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+            // console.log(data);
             if(data.insertedId){
                 toast.success('New service added successfully!')
                 // form.reset();

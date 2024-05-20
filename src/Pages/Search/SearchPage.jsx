@@ -13,8 +13,8 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/category');
-        console.log('Fetched Data:', response.data);
+        const response = await axios.get('https://smart-kidz-server-liard.vercel.app/category');
+        // console.log('Fetched Data:', response.data);
         setData(response.data);
         setFilteredData(response.data);
         setLoading(false);
@@ -28,7 +28,7 @@ const SearchPage = () => {
   }, []);
 
   const handleSearch = (query) => {
-    console.log('Search Query:', query);
+    // console.log('Search Query:', query);
     if (!query) {
       setFilteredData(data);
     } else {
@@ -39,7 +39,7 @@ const SearchPage = () => {
           course.heading1.toLowerCase().includes(lowerCaseQuery)
         )
       );
-      console.log('Filtered Data:', filtered);
+      // console.log('Filtered Data:', filtered);
       setFilteredData(filtered);
     }
   };

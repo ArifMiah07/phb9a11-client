@@ -1,7 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider';
-import useAxiosSecure from '../../Hooks/useAxiosSecure';
-import { Tooltip } from 'react-tooltip'
 import { ToastContainer, toast } from 'react-toastify';
 
 
@@ -15,7 +13,7 @@ const BookingForm = ({loaderData, heading1, sl, targetObject}) => {
   
   //get provider data from db
     useEffect( ()=>{
-      fetch('http://localhost:5000/serviceProviderInfo')
+      fetch('https://smart-kidz-server-liard.vercel.app/serviceProviderInfo')
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -28,15 +26,15 @@ const BookingForm = ({loaderData, heading1, sl, targetObject}) => {
 
         console.log(provider);
 
-        const p = provider.find(u => {
-          if(u?.email === user?.email){
-            console.log(u?.email);
-            return u?.email;
-          }
-          console.log(u);
-        })
+        // const provider = provider.find(u => {
+        //   if(u?.email === user?.email){
+        //     console.log(u?.email);
+        //     return u?.email;
+        //   }
+        //   console.log(u);
+        // })
 
-        console.log(p);
+        // console.log(provider);
 
 
 //submit
@@ -49,8 +47,8 @@ const BookingForm = ({loaderData, heading1, sl, targetObject}) => {
     const serviceId = sl; 
     const serviceName = heading1; 
     const serviceImg = targetObject.imgLink;
-    const providerEmail = p.email; 
-    const providerName = p.name; 
+    const providerEmail = provider.email; 
+    const providerName = provider.name; 
     const userEmail = from.userEmail.value; 
     const userName = user.displayName; 
     const date = from.date.value;
@@ -71,7 +69,7 @@ const BookingForm = ({loaderData, heading1, sl, targetObject}) => {
       price,
       status: 'pending',
     };
-    fetch('http://localhost:5000/bookings',{
+    fetch('https://smart-kidz-server-liard.vercel.app/bookings',{
             method: 'POST', 
             headers: {
                 'content-type' : 'application/json'
@@ -115,11 +113,11 @@ const BookingForm = ({loaderData, heading1, sl, targetObject}) => {
       </div>
       <div>
         <label>Provider Email</label>
-        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerEmail' value={p?.email} readOnly type="email" className="w-full p-2  outline-none border border-gray-700 my-3" />
+        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerEmail' value={provider?.email} readOnly type="email" className="w-full p-2  outline-none border border-gray-700 my-3" />
       </div>
       <div>
         <label>Provider Name</label>
-        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerName' value={p?.name} readOnly type="text" className="w-full p-2  outline-none border border-gray-700 my-3" />
+        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerName' value={provider?.name} readOnly type="text" className="w-full p-2  outline-none border border-gray-700 my-3" />
       </div>
       <div>
         <label>Current User Email</label>

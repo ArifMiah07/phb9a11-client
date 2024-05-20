@@ -31,7 +31,7 @@ const Register = () => {
             password,
             photoURL
         }
-        fetch('http://localhost:5000/serviceProviderInfo',{
+        fetch('https://smart-kidz-server-liard.vercel.app/serviceProviderInfo',{
             method: 'POST', 
             headers: {
                 'content-type' : 'application/json'
@@ -40,7 +40,7 @@ const Register = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+            // console.log(data);
             if(data.insertedId){
                 alert('service book successfully!')
                 form.reset();
@@ -65,7 +65,7 @@ const Register = () => {
     const handleGoogleSignUp = () => {
             signInWithGoogle()
             .then(result => {
-                console.log(result.user.reloadUserInfo);
+                // console.log(result.user.reloadUserInfo);
                 toast.success("Login successful!");
                 navigate(location.state?.from || '/');
             }) 

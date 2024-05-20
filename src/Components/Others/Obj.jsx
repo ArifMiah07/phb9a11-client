@@ -1,5 +1,4 @@
-import React from 'react';
-
+//i tries to get an object from an array by matching a condition;  takes 5 hours to got the correct answer,😢   
 const Obj = ({ sl }) => {
   const content = [
     {
@@ -74,13 +73,13 @@ const Obj = ({ sl }) => {
   const intSl = parseInt(sl, 10);
 
   // Log the parsed sl to the console for debugging
-  console.log('sl:', sl, 'intSl:', intSl);
+  // console.log('sl:', sl, 'intSl:', intSl);
 
   // Find the target object
   const targetObject = content.find(obj => obj.sl === intSl);
 
   // Log the target object to the console for debugging
-  console.log('targetObject:', targetObject);
+  // console.log('targetObject:', targetObject);
 
   // Return a component that renders the found object or a message if not found
   return (

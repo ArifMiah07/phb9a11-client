@@ -8,7 +8,7 @@ const PopularClasses = () => {
     const [pcd, setPcd] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/category')
+        fetch('https://smart-kidz-server-liard.vercel.app/category')
         .then(res => res.json())
         .then(data => {
             // console.log(data);
