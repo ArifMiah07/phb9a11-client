@@ -2,6 +2,7 @@ import ContactNav from '../ContactNav/ContactNav';
 import Nav from '../../Pages/Shared/NavBar/Nav';
 import SubBanner from '../SubBanner/SubBanner';
 import PropTypes from 'prop-types'; 
+import SearchBar from '../SearchBar/SearchBar';
 
 const MixHeader = ({text}) => {
     // console.log(text);
@@ -20,6 +21,9 @@ const MixHeader = ({text}) => {
                         <p className='inter'>{sl}</p>    
                     </div>
                     </div>
+                </div>
+                <div>
+                    <SearchBar></SearchBar>
                 </div>
             </div>
     );

@@ -22,12 +22,12 @@ const DashboardDropdown = () => {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center p-2">
       {user && (
         <>
           <select
             id="dashboard"
-            className="bg-red-400"
+            className="bg-gray-700"
             onChange={handleSelectChange}
           >
             <option value="" disabled selected>
@@ -43,9 +43,9 @@ const DashboardDropdown = () => {
             Logout
           </button>
           {user.image ? (
-            <img src={user.image} alt={user.name} className="w-8 h-8 rounded-full ml-4" />
+            <img src={user.image} alt={user.name} className="rounded-full" />
           ) : (
-            <span className="text-white ml-4">{user.name}</span>
+            <span className="text-white">{user.name}</span>
           )}
         </>
       )}
