@@ -39,12 +39,12 @@ const CategoryCardDetailsPost = ({c}) => {
                     <p className='text-[20px] font-extrabold nunito '>{price}</p>
                 </div>
                 <div className="flex items-center gap-3">        
-                    <Link to={'/course-details'}>
+                    {/* <Link to={'/course-details'}>
                         <button className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
                             Book Now
                         </button>
-                    </Link>
-                    <Link to={'/course-details'}>
+                    </Link> */}
+                    <Link to={'/classes-details'}>
                         <button className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
                             See Details
                         </button>

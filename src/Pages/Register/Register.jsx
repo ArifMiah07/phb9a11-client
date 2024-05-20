@@ -42,7 +42,7 @@ const Register = () => {
         .then(data =>{
             // console.log(data);
             if(data.insertedId){
-                alert('service book successfully!')
+                // alert('  successfully!')
                 form.reset();
             }
         })
