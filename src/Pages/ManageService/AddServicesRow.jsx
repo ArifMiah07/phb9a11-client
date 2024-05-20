@@ -1,17 +1,21 @@
 
-import React from 'react';
 import PropTypes from 'prop-types';
 import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 
-const AddServicesRow = ({ booking, handleDelete, handleBookingConfirm, handleEdit }) => {
-    const { service_name, _id, serviceImageUrl, date, price, description, area, providerEmail, providerImage, providerName } = booking;
+const AddServicesRow = ({ booking, handleDelete, handleEdit }) => {
+
+
+    // service_name, _id, serviceImageUrl, date, price, description, area, providerEmail, providerImage, providerName
+    const { service_name, _id, date, price, providerName, serviceImageUrl } = booking;
+
+
     return (
         <tr>
             <th>
                 <div className="avatar">
                     <div className="mask mask-squircle w-12 h-12">
-                        {providerImage && <img src={providerImage} alt="Avatar" />}
+                        {serviceImageUrl && <img src={serviceImageUrl} alt="Avatar" />}
                     </div>
                 </div>
             </th>
@@ -28,10 +32,10 @@ const AddServicesRow = ({ booking, handleDelete, handleBookingConfirm, handleEdi
             </td>
             <td>{price}</td>
             <th className='flex gap-4'>
-                <button onClick={() => handleDelete(_id)} className="btn btn-circle">
+                <button onClick={() => handleDelete(_id)} className="btn p-4 btn-circle tooltip " data-tip="double click here to delete" >
                     <MdDeleteForever />
                 </button>
-                <button onClick={() => handleEdit(booking)} className='btn btn-circle'>
+                <button onClick={() => handleEdit(booking)} className="btn p-4 btn-circle tooltip " data-tip="double click here to Edit" >
                     <FaRegEdit />
                 </button>
             </th>

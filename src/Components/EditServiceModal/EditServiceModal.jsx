@@ -1,7 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider';
+import { Tooltip } from 'react-tooltip'
 
 const EditServiceModal = ({ booking, onSave, onClose }) => {
+
+    //manage service
 
     const {user} = useContext(AuthContext);
     const [formData, setFormData] = useState({ ...booking });
@@ -26,7 +29,7 @@ const EditServiceModal = ({ booking, onSave, onClose }) => {
         e.preventDefault();
         onSave(formData);
     };
-
+//
     return (
         <dialog id="editServiceModal" className="modal">
             <div className="modal-box w-11/12 max-w-5xl">
@@ -63,7 +66,7 @@ const EditServiceModal = ({ booking, onSave, onClose }) => {
                         />
                     </div>
                     <div className="modal-action">
-                        <button type="submit" className="btn btn-primary">Save</button>
+                        <button  type="submit" className="tooltip btn btn-primary" data-tip="click to save edit! wait, it will take few sec." > Save </button>
                         <button type="button" onClick={onClose} className="btn">Close</button>
                     </div>
                 </form>

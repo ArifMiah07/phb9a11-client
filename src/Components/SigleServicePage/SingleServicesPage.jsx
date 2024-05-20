@@ -2,7 +2,7 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import CoursesDetails from '../../Pages/Home/Categorys/CoursesDetails';
 import { Helmet } from 'react-helmet-async';
-import Obj from '../Others/Obj';
+// import Obj from '../Others/Obj';
 
 const SingleServicesPage = () => {
 
@@ -32,7 +32,7 @@ const { heading1, sl } = useParams();
             <Helmet>
                 <title>Single Services Page</title>
             </Helmet>
-            <h1>hy{heading1}  {sl}</h1>
+            <h1>{heading1}  {sl}</h1>
             {/* <Obj sl={sl}></Obj> */}
             <CoursesDetails  loaderData={loaderData} sl={sl} heading1={heading1}></CoursesDetails>
         </div>

@@ -56,10 +56,10 @@ const router = createBrowserRouter([
           path: '/classes-details',
           element: <ClassesDetails></ClassesDetails>
         },
-        {
-          path: '/course-details',
-          element: <CoursesDetails></CoursesDetails>
-        },
+        // {
+        //   path: '/course-details',
+        //   element: <CoursesDetails></CoursesDetails>
+        // },
         {
           path: '/category/:id',
           element: <CategoryCardDetails></CategoryCardDetails>,
@@ -84,7 +84,7 @@ const router = createBrowserRouter([
         },
         {
           path: '/all-services',
-          element:<PrivateRoute><AllServices></AllServices></PrivateRoute>
+          element:<AllServices></AllServices>
         },
         {
           path: '/single-service/:id',
