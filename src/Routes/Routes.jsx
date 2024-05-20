@@ -93,11 +93,11 @@ const router = createBrowserRouter([
         },
         {
           path: '/search',
-          element: <SearchPage></SearchPage>
+          element: <PrivateRoute><SearchPage></SearchPage></PrivateRoute>
         },
         {
           path: '/:heading1/:sl',
-          element: <SingleServicesPage />,
+          element: <PrivateRoute><SingleServicesPage /></PrivateRoute>,
           loader: () => fetch('http://localhost:5000/category')
         }        
       ]

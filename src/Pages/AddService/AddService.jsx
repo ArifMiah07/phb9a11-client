@@ -5,6 +5,8 @@ import Nav from "../Shared/NavBar/Nav";
 import SubBanner from "../../Components/SubBanner/SubBanner";
 import ContactNav from "../../Components/ContactNav/ContactNav";
 import { Helmet } from "react-helmet-async";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddService = () => {
 
@@ -21,11 +23,11 @@ const AddService = () => {
 
         const form = e.target;
         const service_name = form.service_name.value;
-        const email = user?.email;
+        const serviceImageUrl = form.serviceImgUrl.value;
         const date = form.date.value;
         const price = form.price.value;
         const description = form.description.value;
-        const imageUrl = form.imageUrl.value;
+        const imageUrl = user.photoUrl;
         const area = form.area.value;
         const providerEmail = user?.email;
         const providerImage = user?.photoURL;
@@ -33,8 +35,8 @@ const AddService = () => {
 
 
         const bookOrderData ={
-            service_name,
-            email, 
+            service_name, 
+            serviceImageUrl,
             date, 
             price,
             description,
@@ -58,12 +60,13 @@ const AddService = () => {
         .then(data =>{
             console.log(data);
             if(data.insertedId){
-                alert('service book successfully!')
+                toast.success('New service added successfully!')
                 // form.reset();
             }
         })
         .catch(error =>{
-            console.log(error)
+            console.log(error);
+            toast.error('Fail to add a New service!')
         })
 
     }
@@ -86,20 +89,21 @@ const AddService = () => {
                     </div>
                 </div>
             </div>
-            <h2 className="text-center text-3xl font-bold">Check Out: {''}</h2>
+            <ToastContainer></ToastContainer>
+            <h2 className="text-center text-3xl font-bold my-5">Add A New Service: {''}</h2>
             <form onSubmit={handleOrderNow} className="card-body">
                 <div className="grid md:grid lg:grid lg:grid-cols-2 gap-8">
-                    {/* <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Name</span>
-                        </label>
-                        <input name="name" defaultValue={user?.displayName} type="text" placeholder="First Name" className="input input-bordered" required />
-                    </div> */}
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Image Url</span>
+                            <span className="label-text">Provider Name</span>
                         </label>
-                        <input name="imageUrl" type="text" placeholder="Last Name" className="input input-bordered" required />
+                        <input name="name" defaultValue={user?.displayName} type="text" placeholder="First Name" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Service Image Url</span>
+                        </label>
+                        <input className="input input-bordered" required  type="text" name="serviceImgUrl" placeholder="Service Image Url" />
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -137,7 +141,7 @@ const AddService = () => {
                         <span className="label-text">Description</span>
                     </label>
                     {/* <input  type="email" placeholder="Your email" className="input input-bordered" required /> */}
-                    <textarea className="p-6" cols="30" rows="10" type="text" placeholder="Your Massage"   name="description" id=""></textarea>
+                    <textarea className="p-6" cols="30" rows="10" type="text" placeholder="Write Your Description"   name="description" id=""></textarea>
                 </div>
                 
                 <div className="form-control mt-6">

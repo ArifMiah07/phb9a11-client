@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 
 const CoursesDetails = ({heading1, sl, loaderData}) => {
 
-    console.log(heading1, sl, loaderData);
+    // console.log(heading1, sl, loaderData);
 
 
     const nText = [heading1,sl]
@@ -23,10 +23,6 @@ const CoursesDetails = ({heading1, sl, loaderData}) => {
             <div className="my-12">
                 <CourseOverview heading1={heading1} sl={sl} loaderData={loaderData}></CourseOverview>
             </div>
-            {/* <div className="my-12 ">
-
-            </div> */}
-            
         </div>
     );
 };

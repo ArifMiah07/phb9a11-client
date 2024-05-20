@@ -24,11 +24,31 @@ const Register = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
+        const photoURL = form.photoURL.value;
         const userInfo = {
             name, 
             email, 
-            password
+            password,
+            photoURL
         }
+        fetch('http://localhost:5000/serviceProviderInfo',{
+            method: 'POST', 
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(userInfo)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data);
+            if(data.insertedId){
+                alert('service book successfully!')
+                form.reset();
+            }
+        })
+        .catch(error =>{
+            console.log(error)
+        })
         // console.log(userInfo);
         
         createUser(email, password)
@@ -78,6 +98,12 @@ const Register = () => {
                         </div>
                         <div className="form-control">
                             <label className="label">
+                                <span className="label-text">Photo URL</span>
+                            </label>
+                            <input name="photoURL" type="text" placeholder="Photo URL" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
                             <input name="email" type="email" placeholder="email" className="input input-bordered" required />
@@ -103,7 +129,7 @@ const Register = () => {
                             </div>
                         </div>
                     </form>
-                    <div className="mb-4">
+                    <div className="mb-6 ">
                         <p className="text-center">Already have an account? <Link to="/login">Log In</Link></p>
                     </div>
                 </div>

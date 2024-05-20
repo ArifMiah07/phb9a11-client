@@ -20,15 +20,6 @@ const PopularClassesCard = ({ c }) => {
 
     const { sl, imgT, ages, time, rating, teacher, price, imgLink, heading1 } = c;
 
-    const handleSeeDetails = () => {
-        if (user) {
-            navigate('/course-details');
-        } else {
-            navigate('/login', { state: { from: location.pathname } });
-            //  <Navigate state={location.pathname} to={'/login'} replace></Navigate>
-        }
-    };
-
     const handleShowAll = () => {
         if (user) {
             navigate('/all-services');
@@ -59,11 +50,6 @@ const PopularClassesCard = ({ c }) => {
                     <p className='text-[20px] font-extrabold nunito'>{price}</p>
                 </div>
                 <div className='flex gap-4'>
-                    <button
-                        onClick={handleSeeDetails}
-                        className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
-                        See Details
-                    </button>
                     <button onClick={handleShowAll} className="glow-effect admissionNow bg-yellow-400 text-black font-bold inter px-4 py-2 rounded-md hover:bg-yellow-500">
                         Show All
                     </button>

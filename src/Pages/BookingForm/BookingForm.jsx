@@ -1,18 +1,47 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider';
+import useAxiosSecure from '../../Hooks/useAxiosSecure';
+import { Tooltip } from 'react-tooltip'
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const BookingForm = ({loaderData, heading1, sl, targetObject}) => {
 
 
-  const { user } = useContext(AuthContext);
-  console.log(targetObject)
+  const { user} = useContext(AuthContext);
 
-  const serviceData = targetObject
+  const [provider, setProvider ] = useState([]);
   
-const tEmail = 'smartkidz@gmail.com'
+  
+  //get provider data from db
+    useEffect( ()=>{
+      fetch('http://localhost:5000/serviceProviderInfo')
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        setProvider(data);
+      })
+      .catch(error => {
+        console.log(error);
+      })
+    } , [])
 
+        console.log(provider);
+
+        const p = provider.find(u => {
+          if(u?.email === user?.email){
+            console.log(u?.email);
+            return u?.email;
+          }
+          console.log(u);
+        })
+
+        console.log(p);
+
+
+//submit
   const handleSubmit = (e) => {
+
     e.preventDefault();
     
 
@@ -20,10 +49,10 @@ const tEmail = 'smartkidz@gmail.com'
     const serviceId = sl; 
     const serviceName = heading1; 
     const serviceImg = targetObject.imgLink;
-    const providerEmail = from.providerEmail.value; 
-    const providerName = targetObject.teacher; 
+    const providerEmail = p.email; 
+    const providerName = p.name; 
     const userEmail = from.userEmail.value; 
-    const userName = from.userName.value; 
+    const userName = user.displayName; 
     const date = from.date.value;
     const sInstruction = from.instruction.value;
     const price = targetObject.price;
@@ -51,26 +80,27 @@ const tEmail = 'smartkidz@gmail.com'
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
-            if(data.insertedId){
-                alert('service book successfully!')
-                from.reset();
-            }
+          // console.log(data);
+          if(data.insertedId){
+            toast.success('service book successfully!')
+            from.reset();
+          }
         })
         .catch(error =>{
-            console.log(error)
+          toast.error('fail to book service!',error)
+          console.log(error)
         })
-
-
+        // console.log(bookingInfo);
+      };
+      
+  
   
 
-    console.log(bookingInfo);
-  };
-
   return (
-    <form onSubmit={handleSubmit} className="p-4 inter">
+    <form onSubmit={handleSubmit} className="relative  p-4 inter">
+      
       <div>
-        <label>Service ID</label>
+        <label>Service ID {provider.length} </label>
         <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='serviceId' value={sl} readOnly type="text" className="w-full p-2  outline-none border border-gray-700 my-3" />
       </div>
       <div>
@@ -85,11 +115,11 @@ const tEmail = 'smartkidz@gmail.com'
       </div>
       <div>
         <label>Provider Email</label>
-        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerEmail' value={tEmail} type="email" className="w-full p-2  outline-none border border-gray-700 my-3" />
+        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerEmail' value={p?.email} readOnly type="email" className="w-full p-2  outline-none border border-gray-700 my-3" />
       </div>
       <div>
         <label>Provider Name</label>
-        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerName' value={targetObject.teacher} readOnly type="text" className="w-full p-2  outline-none border border-gray-700 my-3" />
+        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}}   name='providerName' value={p?.name} readOnly type="text" className="w-full p-2  outline-none border border-gray-700 my-3" />
       </div>
       <div>
         <label>Current User Email</label>
@@ -97,7 +127,10 @@ const tEmail = 'smartkidz@gmail.com'
       </div>
       <div>
         <label>Current User Name</label>
-        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}} required  name='userName' type="text" value={user ? user.DisplayName : 'user name not found. plz write ur name'} className="w-full p-2  outline-none border border-gray-700 my-3" />
+        <input style={{boxShadow: "01px 1px 02px 02px rgb(0, 0, 0)"}} required  name='userName'  type="text" value={user? user.displayName : 'user name not found. plz write ur name'} className="w-full p-2  outline-none border border-gray-700 my-3" />
+      </div>
+      <div className='absolute top-0'>
+      <ToastContainer></ToastContainer>
       </div>
       <div>
         <label>Service Taking Date </label>
