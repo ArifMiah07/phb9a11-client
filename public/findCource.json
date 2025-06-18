@@ -1,0 +1,27 @@
+[
+    
+    {
+        "serial": 1,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/course/01.jpg",
+        "heading1": "Early Explorers (Ages 3-5)",
+        "paragraph": "An introduction to colors, shapes, and basic artistic expressions.",
+        "subjects": ["ABC Adventure", "Little Scientists"],
+        "backgroundColor": "#7763E5"
+    },
+    {
+        "serial": 2,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/course/02.jpg",
+        "heading1": "Primary School (Ages 6-11)",
+        "paragraph": "An introduction to colors, shapes, and basic artistic expressions.",
+        "subjects": ["Math Mania", "Science Safari"],
+        "backgroundColor": "#FF6D1C"
+    },
+    {
+        "serial": 3,
+        "imageLink": "https://html.themewant.com/studykids/assets/images/course/03.jpg",
+        "heading1": "Middle School (Ages 12-14)",
+        "paragraph": "An introduction to colors, shapes, and basic artistic expressions.",
+        "subjects": ["Coding", "Robotics"],
+        "backgroundColor": "#B54CCA"
+    }
+]

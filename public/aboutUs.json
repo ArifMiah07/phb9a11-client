@@ -1,0 +1,25 @@
+[
+    {
+      "serial_name": "aboutussctionjsondata",
+      "title": "About Us",
+      "img": "https://html.themewant.com/studykids/assets/images/about/about-01.png",
+      "h1": "Discover Our Mission for <br />SmartKizs Academy",
+      "p": "Welcome to Sutdykids, where education meets inspiration, and every child's journey is a story of growth and discovery. "
+    },
+    {
+      "serial": 1,
+      "imageLink": "https://html.themewant.com/studykids/assets/images/icon/01.svg",
+      "heading1": "Our Mission",
+      "paragraph": "At SmartKidz our mission is to cultivate an environment where curiosity is sparked.",
+      "style": "text-4xl",
+      "backgroundColor": "#09A24F"
+    },
+    {
+      "serial": 2,
+      "imageLink": "https://html.themewant.com/studykids/assets/images/icon/01.svg",
+      "heading1": "Our Commitment",
+      "paragraph": "As we embark on the journey of education together, we remain committed to providing.",
+      "style": "text-4xl",
+      "backgroundColor": "#7763E5"
+    }
+  ]

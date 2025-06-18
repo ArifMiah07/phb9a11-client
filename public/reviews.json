@@ -1,0 +1,26 @@
+[
+    {
+      "name": "David John",
+      "title": "Artist and Instructor",
+      "message": "I would highly recommend Michael Richard to anyone interested in the subject matter. It has provided me with invaluable knowledge & a newfound passion topic.",
+      "rating": 4
+    },
+    {
+      "name": "Sarah Smith",
+      "title": "Teacher",
+      "message": "The course was well structured and the instructor was very knowledgeable. I learned a lot and feel more confident in my abilities.",
+      "rating": 5
+    },
+    {
+      "name": "James Lee",
+      "title": "Engineer",
+      "message": "An excellent experience overall. The practical examples were very helpful and the instructor's enthusiasm was infectious.",
+      "rating": 4
+    },
+    {
+      "name": "Emily Davis",
+      "title": "Designer",
+      "message": "The lessons were engaging and very informative. I would highly recommend this to anyone looking to improve their skills.",
+      "rating": 5
+    }
+]

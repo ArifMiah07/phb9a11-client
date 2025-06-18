@@ -1,0 +1,13 @@
+.border-cyberpunk {
+    border-left: 8px solid rgba(0, 255, 255, 0.7); /* Light blue */
+  border-right: 8px solid rgba(255, 0, 255, 0.7); /* Pink */
+  /* Optional: Add an inner border for a stronger effect */
+  border-left-style: inset;
+  border-right-style: inset;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-left-color: rgba(0, 0, 0, 0.2); /* Dark shadow */
+  border-right-color: rgba(0, 0, 0, 0.2); /* Dark shadow */
+  }
+  
+  
