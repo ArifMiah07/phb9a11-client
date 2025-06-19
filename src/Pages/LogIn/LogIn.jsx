@@ -10,6 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 
+
+
 const LogIn = () => {   
 
     const [showPassword, setShowPassword] = useState(false);
@@ -31,10 +33,21 @@ const LogIn = () => {
             toast.success('login success!');
             navigate(location.state?.from || '/');
         } catch (error) {
-            // console.error(error);
+            console.log(error);
             toast.error(error);
         }
     };
+
+    const handleGoogleLogin = async()=> {
+        try {
+            await signInWithGoogle()
+            toast.success('login success!');
+            navigate(location.state?.from || '/');
+        } catch (error) {
+            console.log(error);
+                toast.error(error);
+        }
+    }
 
     return (
         <div className=" ">
@@ -51,7 +64,7 @@ const LogIn = () => {
                     <img src={login} alt="" />
                 </div>
                 <div className="card shrink-0 w-full lg:w-1/2 max-w-sm shadow-2xl bg-base-100">
-                    <form onSubmit={handleLogin} className="bg-[#A6C9FF] card-body">
+                    <form onSubmit={handleLogin} className="bg-[#A6C9FF] rounded-lg card-body">
                         <h1 className="text-3xl font-bold text-[#444444] text-center">Login</h1>
                         <div className="form-control">
                             <label className="label">
@@ -74,13 +87,13 @@ const LogIn = () => {
                         <div className="flex flex-col items-center gap-6">
                             <h1>Or Sign In with</h1>
                             <div className="flex gap-6">
-                                <button type="button" className="btn btn-circle" onClick={signInWithGoogle}><FcGoogle /></button>
+                                <button type="button" className="btn btn-circle" onClick={handleGoogleLogin}><FcGoogle /></button>
                                 <button className="btn btn-circle"><FaFacebook /></button>
                                 <button className="btn btn-circle"><FaLinkedin /></button>
                             </div>
                         </div>
                     </form>
-                    <div>
+                    <div className='my-2'>
                         <p className="text-center">Do not have an account? <Link to="/register" className="text-orange-400">Sign Up</Link></p>
                     </div>
                 </div>

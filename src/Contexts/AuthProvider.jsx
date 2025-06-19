@@ -32,10 +32,11 @@ const AuthProvider = ({children}) => {
         setLoading(true);
         try {
             const result = await signInWithEmailAndPassword(auth, email, password);
-            toast.success("Login successful!");
+            // toast.success("Normal Login successful!");
             return result;
         } catch (error) {
-            toast.error(error.message);
+            // toast.error(error.message);
+            console.log(error);
             throw error;
         } finally {
             setLoading(false);
@@ -46,10 +47,12 @@ const AuthProvider = ({children}) => {
         setLoading(true);
         try {
             const result = await signInWithPopup(auth, googleProvider);
-            toast.success("Login successful!");
+            // toast.success("Google Login successful!");
+            console.log({"result: ": result});
             return result;
         } catch (error) {
-            toast.error(error.message);
+            console.log(error)
+            // toast.error(error.message?.split("()"));
             throw error;
         } finally {
             setLoading(false);
